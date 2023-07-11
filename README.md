@@ -20,6 +20,13 @@
 
 ![Создать задачу](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2013-27-15.png)
 
+Поиск по названию задачи.
+
+![Поиск задачи](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2016-40-53.png)
+
+Поиск по тегам.
+
+![Поиск по тегам](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2016-41-09.png)
 
 Так же редактирование задач и тегов. У каждого пользователя свой список задач и тегов. 
 </p>
