@@ -26,34 +26,28 @@
                             </div>
                         @endif
 
-                        <a href="{{ route('tags.create') }}" class="btn btn-primary">Create New Tag</a>
+                        <a href="{{ route('tags.create') }}" class="btn btn-primary">Созадть тег</a>
+                        <a href="{{ route('tasks.index') }}" class="btn btn-success">Список задач</a>
 
                         <hr>
 
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Actions</th>
+                                <th>Имя</th>
+                                <th>Опции</th>
                             </tr>
                             </thead>
                             <tbody>
                             @foreach ($tags as $tag)
                                 <tr>
                                     <td>{{ $tag->name }}</td>
-                                    <td>
-                                        <a href="{{ route('tags.edit', $tag->id) }}" class="btn btn-sm btn-default">Edit</a>
-
-
+                                    <td> <a href="{{ route('tags.edit', $tag->id) }}" class="btn btn-sm btn-success">Редактировать</a>
+                                        <a href="{{ route('tags.show', $tag->id) }}" class="btn btn-sm btn-info">Посмотреть</a>
                                         <form method="POST" action="{{ route('tags.destroy', $tag->id) }}" id="destroy">
-
-
-
                                             @csrf
-
                                             @method('DELETE')
-
-                                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                            <button type="submit" class="btn btn-sm btn-danger">Удалить</button>
                                         </form>
                                     </td>
                                 </tr>

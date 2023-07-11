@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Create New Tag</div>
+                    <div class="card-header">Создать новый тег</div>
 
                     <div class="card-body">
                         @if ($errors->any())
@@ -22,11 +22,12 @@
                             @csrf
 
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name">Имя</label>
                                 <input type="text" class="form-control" id="name" name="name">
                             </div>
 
-                            <button type="submit" class="btn btn-primary">Create Tag</button>
+                            <button type="submit" class="btn btn-primary">Создать тег</button>
+                            <a href="{{route('tags.index')}}" class="btn btn-success">Отмена</a>
                         </form>
                     </div>
                 </div>
