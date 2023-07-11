@@ -24,3 +24,20 @@
 Так же редактирование задач и тегов. У каждого пользователя свой список задач и тегов. 
 </p>
 Установка: 
+1. Скачать проект с репозитория https://github.com/rustemib/spisok_zadach.git
+
+    git clone https://github.com/rustemib/spisok_zadach.git
+    
+2. composer install
+3. создать базу mysql
+4. переименовать файл .env.example на .env и отредактировать
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=имя базы
+DB_USERNAME=пользователь
+DB_PASSWORD=пароль   
+5. php artisan key:generate 
+6. php artisan migrate
+7. npm install
+8. php artisan serve
