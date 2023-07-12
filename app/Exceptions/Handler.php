@@ -2,8 +2,10 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
+use Exception;
 
 class Handler extends ExceptionHandler
 {
@@ -24,7 +26,9 @@ class Handler extends ExceptionHandler
     public function register(): void
     {
         $this->reportable(function (Throwable $e) {
-            //
+//            return abort('404');
         });
     }
+
+
 }

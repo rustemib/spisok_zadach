@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Список задач</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
@@ -24,7 +24,10 @@
                     <div class="col-lg-6 mx-auto">
                         <p class="fs-5 mb-4 text-center">Какой то приветсвенный текст</p>
                         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                            @if (Route::has('login'))
+                            @if(Auth::check() && Auth::user()->is_admin)
+                                <a href="{{ url('/admin') }}" class="btn btn-outline-secondary btn-lg px-4 me-sm-3 fw-bold">Админка</a>
+                            @endif
+                            @if (Auth::check())
                             @auth
                                 <a href="{{ url('/tasks/index') }}" class="btn btn-outline-secondary btn-lg px-4 me-sm-3 fw-bold">К задачам</a>
                             @else

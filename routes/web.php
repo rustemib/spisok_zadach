@@ -42,3 +42,22 @@ Route::get('tag/show/{id}', array(\App\Http\Controllers\TagController::class, 's
 Route::get('tag/{id}/edit', array(\App\Http\Controllers\TagController::class, 'edit'))->name('tags.edit');
 Route::patch('tag/{id}', array(\App\Http\Controllers\TagController::class, 'update'))->name('tags.update');
 Route::delete('tag/index/{id}', array(\App\Http\Controllers\TagController::class, 'destroy'))->name('tags.destroy');
+
+
+Route::prefix('admin')->middleware('admin')->group(function () {
+    Route::get('/', array(\App\Http\Controllers\AdminController::class, 'index'))->name('admin.index');
+    Route::get('/users', array(\App\Http\Controllers\AdminController::class, 'users'))->name('admin.users');
+    Route::get('/tasks', array(\App\Http\Controllers\AdminController::class, 'tasks'))->name('admin.tasks');
+    Route::get('/tasks/{id}/edit', array(\App\Http\Controllers\AdminController::class, 'editTask'))->name('admin.editTask');
+    Route::patch('/tasks/{id}', array(\App\Http\Controllers\AdminController::class, 'updateTask'))->name('admin.updateTask');
+    Route::get('/user/{id}/edit', array(\App\Http\Controllers\AdminController::class, 'editUser'))->name('admin.editUser');
+    Route::patch('/users/{id}', array(\App\Http\Controllers\AdminController::class, 'updateUser'))->name('admin.updateUser');
+    Route::get('/users/create', array(\App\Http\Controllers\AdminController::class, 'createUser'))->name('admin.createUser');
+    Route::post('/users', array(\App\Http\Controllers\AdminController::class, 'storeUser'))->name('admin.storeUser');
+    Route::delete('/users/{id}', array(\App\Http\Controllers\AdminController::class, 'destroyUser'))->name('admin.destroy');
+    Route::get('/tags', array(\App\Http\Controllers\AdminController::class, 'tags'))->name('admin.tags');
+    Route::get('/tags/{id}/edit', array(\App\Http\Controllers\AdminController::class, 'editTag'))->name('admin.tags.edit');
+    Route::patch('/tags/{id}', array(\App\Http\Controllers\AdminController::class, 'updateTag'))->name('admin.tags.update');
+    Route::delete('/tags/{id}', array(\App\Http\Controllers\AdminController::class, 'destroyTag'))->name('admin.tags.destroy');
+});
+
