@@ -29,8 +29,37 @@
 ![Поиск по тегам](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2016-41-09.png)
 
 
-<h2>Админка</h2>
+
+
+Админка
+
 ![Админка](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2017-53-53.png)
+
+Список в админке
+
+![Админка](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-35-32.png)
+
+Список пользователей
+
+![Список пользователей](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-32-27.png)
+
+Редактирование пользователя, возможность сделать его админом.
+
+![Редактирование пользователя](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-32-39.png)
+
+Список всех задач всех пользователей
+
+![Список всех задач](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-32-54.png)
+
+Список тегов всех пользователей
+
+![Список всех тегов](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-33-05.png)
+
+Редактирование тегов
+
+![Редактирование тегов](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-33-12.png)
+
+
 
 Так же редактирование задач и тегов. У каждого пользователя свой список задач и тегов. 
 </p>
