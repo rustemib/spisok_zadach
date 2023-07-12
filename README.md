@@ -102,34 +102,34 @@ MYSQL
 sudo apt install mysql-server
 
 //настройка
-sudo mysql
-SELECT user,authentication_string,plugin,host FROM mysql.user;
+//sudo mysql
+//SELECT user,authentication_string,plugin,host FROM mysql.user;
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; //установка пароля для рута
+//ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; //установка пароля для рута
 
 //установка безопасности
-sudo mysql_secure_installation
+//sudo mysql_secure_installation
 //после ответов на вопросы создать нового пользователя для базы
-CREATE USER 'username'@'host' IDENTIFIED WITH mysql_native_password BY 'password';
+//CREATE USER 'username'@'host' IDENTIFIED WITH mysql_native_password BY 'password';
 //создать базу
-CREATE DATABASE название базы;
+//CREATE DATABASE название базы;
 
-GRANT ALL ON названиебазы.* TO 'laravel'@'localhost';
+//GRANT ALL ON названиебазы.* TO 'laravel'@'localhost';
 
-FLUSH PRIVILEGES;
+//FLUSH PRIVILEGES;
 //установка php
-PHP-FPM-8.2
+//PHP-FPM-8.2
 
-sudo apt update && sudo apt install -y software-properties-common 
-sudo add-apt-repository ppa:ondrej/php 
-sudo apt update
-sudo apt install php8.2-fpm
+//sudo apt update && sudo apt install -y software-properties-common 
+//sudo add-apt-repository ppa:ondrej/php 
+//sudo apt update
+//sudo apt install php8.2-fpm
 
-GIT
-sudo apt install git
+//GIT
+//sudo apt install git
 
 
-COMPOSER
+//COMPOSER
 sudo apt install php-cli unzip
 cd ~
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
