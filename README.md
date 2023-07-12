@@ -93,16 +93,16 @@
 Подготовка сервера:
 
 NGINX
-sudo apt update
-sudo apt install nginx
-sudo systemctl reload nginx
+```sudo apt update```
+```sudo apt install nginx```
+```sudo systemctl reload nginx```
 
 MYSQL
 //установка
-sudo apt install mysql-server
+```sudo apt install mysql-server```
 
 //настройка
-//sudo mysql
+```sudo mysql```
 //SELECT user,authentication_string,plugin,host FROM mysql.user;
 
 //ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; //установка пароля для рута
