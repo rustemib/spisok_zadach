@@ -134,7 +134,7 @@ MYSQL
 ```sudo apt install php-cli unzip```
 ```cd ~```
 ```curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php```
-```HASH=`curl -sS https://composer.github.io/installer.sig````
+```HASH=`curl -sS https://composer.github.io/installer.sig```
 echo $HASH
 
 ```php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"```
@@ -145,8 +145,8 @@ echo $HASH
 
 
 NODE NPM
-```curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs```
+```curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\```
+```sudo apt-get install -y nodejs```
 
 
 PHP Extensions
