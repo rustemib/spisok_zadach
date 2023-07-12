@@ -114,7 +114,7 @@ MYSQL
 //создать базу
 ```CREATE DATABASE название базы;```
 
-```GRANT ALL ON названиебазы.* TO 'laravel'@'localhost';```
+```GRANT ALL ON названиебазы.* TO 'поьзователь базы(не рут, а новый)'@'localhost';```
 
 ```FLUSH PRIVILEGES;```
 //установка php
