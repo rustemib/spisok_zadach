@@ -103,63 +103,63 @@ MYSQL
 
 //настройка
 ```sudo mysql```
-//SELECT user,authentication_string,plugin,host FROM mysql.user;
+```SELECT user,authentication_string,plugin,host FROM mysql.user;```
 
-//ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'; //установка пароля для рута
+```ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';``` //установка пароля для рута
 
 //установка безопасности
-//sudo mysql_secure_installation
+```sudo mysql_secure_installation```
 //после ответов на вопросы создать нового пользователя для базы
-//CREATE USER 'username'@'host' IDENTIFIED WITH mysql_native_password BY 'password';
+```CREATE USER 'username'@'host' IDENTIFIED WITH mysql_native_password BY 'password';```
 //создать базу
-//CREATE DATABASE название базы;
+```CREATE DATABASE название базы;```
 
-//GRANT ALL ON названиебазы.* TO 'laravel'@'localhost';
+```GRANT ALL ON названиебазы.* TO 'laravel'@'localhost';```
 
-//FLUSH PRIVILEGES;
+```FLUSH PRIVILEGES;```
 //установка php
 //PHP-FPM-8.2
 
-//sudo apt update && sudo apt install -y software-properties-common 
-//sudo add-apt-repository ppa:ondrej/php 
-//sudo apt update
-//sudo apt install php8.2-fpm
+```sudo apt update && sudo apt install -y software-properties-common ```
+```sudo add-apt-repository ppa:ondrej/php ```
+```sudo apt update```
+```sudo apt install php8.2-fpm```
 
 //GIT
-//sudo apt install git
+```sudo apt install git```
 
 
 //COMPOSER
-sudo apt install php-cli unzip
-cd ~
-curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
-HASH=`curl -sS https://composer.github.io/installer.sig`
+```sudo apt install php-cli unzip```
+```cd ~```
+```curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php
+HASH=`curl -sS https://composer.github.io/installer.sig````
 echo $HASH
 
-php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+```php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"```
 
-sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer```
 
-composer
+```composer```
 
 
 NODE NPM
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs
+```curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs```
 
 
 PHP Extensions
 
-sudo apt-get install -y php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-bcmath
+```sudo apt-get install -y php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-bcmath```
 
 настройка nginx
-cd /etc/nginx/sites-available/
-sudo nano default
+```cd /etc/nginx/sites-available/```
+```sudo nano default```
 в строке
-root /var/www/сайт скаченный с гита/public;
+```root /var/www/сайт скаченный с гита/public;```
 
 пометять локации что бы ходить по всем страницам 
- # Add index.php to the list if you are using PHP
+``` # Add index.php to the list if you are using PHP
         index index.php;
 
         server_name _;
@@ -183,7 +183,7 @@ root /var/www/сайт скаченный с гита/public;
         #
         #location ~ /\.ht {
         #       deny all;
-        #}
+        #}```
 
 
 
