@@ -160,7 +160,7 @@ echo $HASH
 ```root /var/www/сайт скаченный с гита/public;```
 
 ## пометять локации что бы ходить по всем страницам 
-**```# Add index.php to the list if you are using PHP
+ Add index.php to the list if you are using PHP
         index index.php;
 
         server_name _;
@@ -183,7 +183,7 @@ echo $HASH
         #
         #location ~ /\.ht {
         #       deny all;
-        #}```**
+        #}
 
 ## изменить владельца директории storage и все ее поддиректории
 ```sudo chown -R www-data:www-data /var/www/site_folder/storage```
