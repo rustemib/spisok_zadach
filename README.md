@@ -185,8 +185,9 @@ echo $HASH
         #location ~ /\.ht {
         #       deny all;
         #}```
+## изменить владельца директории storage и все ее поддиректории
+```sudo chown -R www-data:www-data /var/www/site_folder/storage```
 
-
-npm run build
+```npm run build```
 
 
