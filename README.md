@@ -63,7 +63,7 @@
 
 Так же редактирование задач и тегов. У каждого пользователя свой список задач и тегов. 
 </p>
-Установка: 
+## Установка: 
 1. Скачать проект с репозитория https://github.com/rustemib/spisok_zadach.git
 
     git clone https://github.com/rustemib/spisok_zadach.git
@@ -90,46 +90,46 @@
 
 <h2>Деплой на сервер</h2>
 
-Подготовка сервера:
+## Подготовка сервера:
 
-NGINX
+## NGINX
 ```sudo apt update```
 ```sudo apt install nginx```
 ```sudo systemctl reload nginx```
 
-MYSQL
-//установка
+## MYSQL
+## установка
 ```sudo apt install mysql-server```
 
-//настройка
+## настройка
 ```sudo mysql```
 ```SELECT user,authentication_string,plugin,host FROM mysql.user;```
 
 ```ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';``` //установка пароля для рута
 
-//установка безопасности
+## установка безопасности
 ```sudo mysql_secure_installation```
-//после ответов на вопросы создать нового пользователя для базы
+## после ответов на вопросы создать нового пользователя для базы
 ```CREATE USER 'username'@'host' IDENTIFIED WITH mysql_native_password BY 'password';```
-//создать базу
+## создать базу
 ```CREATE DATABASE название базы;```
 
 ```GRANT ALL ON названиебазы.* TO 'поьзователь базы(не рут, а новый)'@'localhost';```
 
 ```FLUSH PRIVILEGES;```
-//установка php
-//PHP-FPM-8.2
+## установка php
+## PHP-FPM-8.2
 
 ```sudo apt update && sudo apt install -y software-properties-common ```
 ```sudo add-apt-repository ppa:ondrej/php ```
 ```sudo apt update```
 ```sudo apt install php8.2-fpm```
 
-//GIT
+## GIT
 ```sudo apt install git```
 
 
-//COMPOSER
+## COMPOSER
 
 ```sudo apt install php-cli unzip```
 ```cd ~```
@@ -144,22 +144,22 @@ echo $HASH
 ```composer```
 
 
-NODE NPM
+## NODE NPM
 ```curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\```
 ```sudo apt-get install -y nodejs```
 
 
-PHP Extensions
+## PHP Extensions
 
 ```sudo apt-get install -y php-common php-mysql php-zip php-gd php-mbstring php-curl php-xml php-bcmath```
 
-настройка nginx
+## настройка nginx
 ```cd /etc/nginx/sites-available/```
 ```sudo nano default```
-в строке
+> в строке
 ```root /var/www/сайт скаченный с гита/public;```
 
-пометять локации что бы ходить по всем страницам 
+## пометять локации что бы ходить по всем страницам 
 ``` # Add index.php to the list if you are using PHP
         index index.php;
 
