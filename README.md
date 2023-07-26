@@ -88,7 +88,7 @@
 
 
 
-<h2>Деплой на сервер</h2>
+## Деплой на сервер
 
 ## Подготовка сервера:
 
@@ -160,7 +160,7 @@ echo $HASH
 ```root /var/www/сайт скаченный с гита/public;```
 
 ## пометять локации что бы ходить по всем страницам 
-``` # Add index.php to the list if you are using PHP
+**```# Add index.php to the list if you are using PHP
         index index.php;
 
         server_name _;
@@ -178,16 +178,15 @@ echo $HASH
         #       # With php-cgi (or other tcp sockets):
         #       fastcgi_pass 127.0.0.1:9000;
         }
-
         # deny access to .htaccess files, if Apache's document root
         # concurs with nginx's one
         #
         #location ~ /\.ht {
         #       deny all;
-        #}```
+        #}```**
+
 ## изменить владельца директории storage и все ее поддиректории
 ```sudo chown -R www-data:www-data /var/www/site_folder/storage```
 
 ```npm run build```
-
 
