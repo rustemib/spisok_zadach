@@ -2,62 +2,62 @@
 <h1>Список задач</h1>
 
 
-![Скриншот главного экрана](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2013-12-44.png)
+![Скриншот главного экрана](Screenshot%20from%202023-07-11%2013-12-44.png)
 
 Страница списка задач для пользователя.
 
-![Лист задач](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2013-26-30.png)
+![Лист задач](Screenshot%20from%202023-07-11%2013-26-30.png)
 
 Страница списка тегов.
 
-![Список тегов](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2013-26-53.png)
+![Список тегов](Screenshot%20from%202023-07-11%2013-26-53.png)
 
 Создать новый тег.
 
-![Новый тег](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2013-26-59.png)
+![Новый тег](Screenshot%20from%202023-07-11%2013-26-59.png)
 
 Создать задачу.
 
-![Создать задачу](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2013-27-15.png)
+![Создать задачу](Screenshot%20from%202023-07-11%2013-27-15.png)
 
 Поиск по названию задачи.
 
-![Поиск задачи](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2016-40-53.png)
+![Поиск задачи](Screenshot%20from%202023-07-11%2016-40-53.png)
 
 Поиск по тегам.
 
-![Поиск по тегам](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-11%2016-41-09.png)
+![Поиск по тегам](Screenshot%20from%202023-07-11%2016-41-09.png)
 
 
 
 
 Админка
 
-![Админка](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2017-53-53.png)
+![Админка](Screenshot%20from%202023-07-12%2017-53-53.png)
 
 Список в админке
 
-![Админка](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-35-32.png)
+![Админка](Screenshot%20from%202023-07-12%2018-35-32.png)
 
 Список пользователей
 
-![Список пользователей](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-32-27.png)
+![Список пользователей](Screenshot%20from%202023-07-12%2018-32-27.png)
 
 Редактирование пользователя, возможность сделать его админом.
 
-![Редактирование пользователя](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-32-39.png)
+![Редактирование пользователя](Screenshot%20from%202023-07-12%2018-32-39.png)
 
 Список всех задач всех пользователей
 
-![Список всех задач](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-32-54.png)
+![Список всех задач](Screenshot%20from%202023-07-12%2018-32-54.png)
 
 Список тегов всех пользователей
 
-![Список всех тегов](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-33-05.png)
+![Список всех тегов](Screenshot%20from%202023-07-12%2018-33-05.png)
 
 Редактирование тегов
 
-![Редактирование тегов](https://github.com/rustemib/spisok_zadach/blob/master/Screenshot%20from%202023-07-12%2018-33-12.png)
+![Редактирование тегов](Screenshot%20from%202023-07-12%2018-33-12.png)
 
 
 
